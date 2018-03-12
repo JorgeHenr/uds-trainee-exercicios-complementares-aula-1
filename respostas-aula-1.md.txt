@@ -1,0 +1,8 @@
+
+HTML é a linguagem de marcação padrão para criar páginas da Web.
+O CSS é a linguagem que descreve o estilo de um documento HTML.
+
+<p> = paragrafos, exemplo <p>Sou um paragrafo</p>
+<a> = links,exemplo <a href="https://www.youtube.com/watch?v=jeo3an2M_Lo"</a>
+<img>=imagens, exemplo <img class="social-image" alt="github" src="https://image.flaticon.com/icons/svg/25/25231.svg">
+
