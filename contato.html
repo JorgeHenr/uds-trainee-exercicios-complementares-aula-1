@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>index2</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Roboto';
+      }
+      .background,
+      .background-wrapper {
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        overflow: hidden;
+      }
+      .background {
+        background-image: url(http://getwallpapers.com/wallpaper/full/b/b/7/435117.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        animation: pulse 5s linear infinite;
+      }
+      .social-image {
+        width: 48px;
+        height: 48px;
+      }
+      .main-header {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        padding: 10px;
+        height: 64px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 0 30px rgba(0,0,0,.2);
+      }
+      .main-header a {
+        display: inline-block;
+        border-radius: 50%;
+        margin: 0 10px;
+        padding: 10px;
+        transition: background .25s linear;
+      }
+      .main-header a:hover {
+        background: rgba(255,255,255,.5);
+      }
+      .main-header a img{
+        width: 36px;
+        height: 36px;
+      }
+      .main-container {
+        padding-top: 64px;
+      }
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.2);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+      .flexbox-row {
+        display: flex;
+        flex-direction: row;
+        align-items: center; // alinhamento vertical
+        justify-content: center; // alinhamento horizontal
+      }
+      .name {
+        font-size 60px;
+      }
+      .social-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-end;
+      }
+      .social-links a:hover {
+        background: rgba(255,255,255,.5)
+      }
+      .social-links a {
+        display: inline-block;
+        border-radius: 50%;
+        margin: 0 10px;
+        padding: 10px;
+        transition: background .25s linear;
+      }
+      .footer {
+        left: 0;
+        right: 0;
+        top: 0;
+        padding: 10px;
+        height: 64px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        box-shadow: 0 0 30px rgba(0,0,0,.2);
+      }
+      .formulario {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      form {
+        margin: 0 auto;
+        width: 400px;
+        padding: 1em;
+        border: 1px solid #CCC;
+        border-radius: 1em;
+      }
+      label {
+        display: inline-block;
+        width: 90px;
+        text-align: right;
+      }
+      input {
+        border:none;
+        background: white;
+        border-radius: 5px;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="background-wrapper">
+      <div class="background"></div>
+    </div>
+    <nav class="main-header">
+      <a href="home.html"><img src="https://cdn3.iconfinder.com/data/icons/streamline-icon-set-free-pack/48/Streamline-18-256.png"></a>
+      <a href="sobre.html"><img src="https://cdn1.iconfinder.com/data/icons/business-seo-vol-2/512/Info_Man_Information_Help_Support_User-256.png"></a>
+      <a href="contato.html"><img src="https://cdn2.iconfinder.com/data/icons/seo-smart-pack/128/grey_new_seo2-41-256.png"></a>
+    </nav>
+    <header class="name">
+      <h1 >Jorge Henrique</h1>
+    </header>
+    <div class="texto1">
+      <h2>Entre em contato:</h2>
+    </div>
+    <form action="/pagina-processa-dados-do-form" method="post">
+      <div>
+        <label for="name">Nome:</label>
+        <input type="text" id="name" />
+      </div>
+      <div>
+        <label for="mail">E-mail:</label>
+        <input type="email" id="mail" />
+      </div>
+      <div>
+        <label for="msg">Mensagem:</label>
+        <textarea id="msg"></textarea>
+      </div>
+      <div class="button">
+        <button type="submit">Enviar sua mensagem</button>
+      </div>
+    </form>
+    <footer class="footer">
+      <div class="social-links">
+        <a href="https://www.facebook.com/jorge.henrique.969" target="_blank"><img class="social-image" alt= "facebook" src="http://www.freeiconspng.com/uploads/blue-facebook-social-icon--icon-search-engine-0.png"></a>
+        <a href="https://www.instagram.com/jorge_henr/" target="_blank"><img class="social-image" alt="instagram" src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-instagram-new-square2-512.png"></a>
+        <a href="https://github.com/JorgeHenr" target="_blank"><img class="social-image" alt="github" src="https://image.flaticon.com/icons/svg/25/25231.svg"></a>
+      </div>
+    </footer>
+  </body>
+</html>
